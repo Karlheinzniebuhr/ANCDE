@@ -3,7 +3,6 @@ import numpy as np
 import os
 import pathlib
 import sktime
-import sktime.utils.load_data
 import torch
 import urllib.request
 import zipfile

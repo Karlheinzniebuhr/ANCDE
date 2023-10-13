@@ -226,7 +226,9 @@ def _train_loop_forecasting(
     best_test_loss = math.inf
     best_train_loss_epoch = 0
     best_val_loss_epoch = 0
-
+    epoch_per_metric = 1
+    plateau_terminate = 50
+    
     history = []
     breaking = False
     if step_mode == "trainloss":
